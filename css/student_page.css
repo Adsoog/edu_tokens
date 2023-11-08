@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #4CAF50;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #388E3C;
+}
+
+.nav-button {
+    background-color: #388E3C;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #1B5E20;
+}
+
+.content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.avatar-container {
+    background-color: #388E3C;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 auto 20px auto;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+.avatar {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-size: 24px;
+}
+
+.user-level {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.token-count {
+    font-size: 20px;
+}
+
+/* Add more styles and animations as desired */
