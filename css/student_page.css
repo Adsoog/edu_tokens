@@ -2,74 +2,96 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #212121;
+    background-image: url('../images/studen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     color: #ffffff;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/studen.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
 }
 
 .navbar {
-    background-color: #4CAF50;
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 10px;
     display: flex;
     justify-content: space-around;
-    border-bottom: 2px solid #388E3C;
+    border: 2px solid black;
+    border-radius: 8px;
 }
 
 .nav-button {
-    background-color: #388E3C;
+    background-color: darkmagenta;
     color: #ffffff;
     border: none;
     padding: 15px 30px;
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
 }
 
 .nav-button:hover {
-    background-color: #1B5E20;
+    background-color: midnightblue;
 }
 
-.content {
+.student-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.student-info, .achievements-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Ajustar la opacidad del fondo para hacerlo un poco más claro */
+    color: #ffffff;
+    padding: 30px; /* Aumentar el espacio interno del contenedor */
+    border-radius: 30px;
+    width: 45%;
     text-align: center;
-    padding: 50px 0;
-}
-
-.title {
-    font-size: 36px;
-    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido verticalmente */
+    justify-content: center; /* Centrar el contenido horizontalmente */
 }
 
 .avatar-container {
     background-color: #388E3C;
     border-radius: 50%;
-    padding: 10px;
-    margin: 0 auto 20px auto;
-    width: 150px;
-    height: 150px;
-    text-align: center;
+    width: 200px; /* Aumentar el tamaño del contenedor del avatar */
+    height: 200px; /* Aumentar el tamaño del contenedor del avatar */
+    overflow: hidden;
+    margin-bottom: 20px; /* Espaciado entre el avatar y el contenido */
 }
 
 .avatar {
     width: 100%;
-    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.user-name {
-    font-size: 24px;
+.student-info {
+    /* ... (otros estilos) ... */
+    margin: 0 20px; /* Espaciado de 20px en los lados del contenedor .student-info */
+    margin-top: 80px;
 }
 
-.user-level {
-    font-size: 18px;
-    margin-bottom: 10px;
+.achievements-container {
+    /* ... (otros estilos) ... */
+    margin: 0 20px; /* Espaciado de 20px en los lados del contenedor .achievements-container */
+    margin-top: 80px;
 }
 
-.token-count {
-    font-size: 20px;
-}
-
-/* Add more styles and animations as desired */
